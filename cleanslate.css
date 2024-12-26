@@ -1,0 +1,347 @@
+/*! cleanslate.css v1.0.0 | The Unlicense | github.com/OfficialCRUGG/cleanslate.css */
+
+/*
+1. Prevent padding and border from affecting element width 
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+}
+
+/*
+1. Consistent line-height across browsers
+2. Prevent font size adjustments after orientation changes on iOS
+3. Better tab size
+4. Disable tab highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  -webkit-tap-highlight-color: transparent; /* 4 */
+}
+
+/*
+1. Remove default margin
+2. Inherit line-height from `html`
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Set the correct height
+2. Fix border color inheritance
+3. Ensure horizontal rules are visible
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+1. Add correct text decoration for abbreviations
+*/
+
+abbr:not([title]) {
+  text-decoration: underline dotted; /* 1 */
+}
+
+/*
+1. Remove default styling for headings
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit; /* 1 */
+  font-weight: inherit; /* 1 */
+}
+
+/*
+1. Remove default styling for anchor elements
+*/
+
+a {
+  color: inherit; /* 1 */
+  text-decoration: none; /* 1 */
+}
+
+/*
+1. Use `bolder` font weight for bold text
+*/
+
+b,
+strong {
+  font-weight: bolder; /* 1 */
+}
+
+/*
+1. Correct default font size for all monospace elements
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-size: 1em; /* 1 */
+}
+
+/*
+1. Uniform font size for <small> elements
+*/
+
+small {
+  font-size: 80%; /* 1 */
+}
+
+/*
+1. Prevent <sub> and <sup> elements from affecting line height
+*/
+
+sub,
+sup {
+  font-size: 75%; /* 1 */
+  line-height: 0; /* 1 */
+  position: relative; /* 1 */
+  vertical-align: baseline; /* 1 */
+}
+
+sub {
+  bottom: -0.25em; /* 1 */
+}
+
+sup {
+  top: -0.5em; /* 1 */
+}
+
+/*
+1. Remove table border gaps
+2. Remove text indentation from table cells
+3. Fix table border color inheritance
+*/
+
+table {
+  border-collapse: collapse; /* 1 */
+  border-spacing: 0; /* 1 */
+  text-indent: 0; /* 2 */
+  border-color: inherit; /* 3 */
+}
+
+/*
+1. Uniform font styles
+2. Remove the margin and padding
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 2 */
+}
+
+/*
+1. Remove inheritance of text-transform
+*/
+
+button,
+select {
+  text-transform: none; /* 1 */
+}
+
+/*
+1. Correct the inability to style clickable button types on Safari and on iOS
+2. Remove default button styles
+*/
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+1. Use modern Firefox focus style for all focusable elements
+*/
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+1. Remove Firefox's `:invalid` styles
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+1. Fix vertical alignment
+*/
+
+progress {
+  vertical-align: baseline; /* 1 */
+}
+
+/*
+1. Fix number input spinner heights
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct appereance
+2. Correct the outline style
+*/
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+1. Remove inner padding
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none; /* 1 */
+}
+
+/*
+1. Fix inability to style on Safari and iOS
+2. Inherit font styles
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+1. Add the correct display
+*/
+
+summary {
+  display: list-item; /* 1 */
+}
+
+/*
+1. Remove default padding and margin
+2. Remove default list style from lists
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0; /* 1 */
+}
+
+fieldset {
+  margin: 0; /* 1 */
+  padding: 0; /* 1 */
+}
+
+legend {
+  padding: 0; /* 1 */
+}
+
+ol,
+ul,
+menu {
+  margin: 0; /* 1 */
+  padding: 0; /* 1 */
+  list-style: none; /* 2 */
+}
+
+/*
+1. Reset default styling
+*/
+dialog {
+  padding: 0; /* 1 */
+}
+
+/*
+1. Prevent horizontal resizing by default
+*/
+textarea {
+  resize: vertical; /* 1 */
+}
+
+/*
+1. Set cursor for buttons
+*/
+
+button,
+[role="button"] {
+  cursor: pointer; /* 1 */
+}
+
+/*
+1. Ensure disabled buttons don't have a pointer cursor
+*/
+
+:disabled {
+  cursor: default; /* 1 */
+}
+
+/*
+1. Make elements block by default
+2. Set vertical-align to middle for improved alignment
+*/
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+1. Constraint images and videos to the parent width
+2. Preserve aspect ratio
+*/
+
+img,
+video {
+  max-width: 100%; /* 1 */
+  height: auto; /* 2 */
+}
